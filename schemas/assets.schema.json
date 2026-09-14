@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StickerAssets",
+  "type": "object",
+  "required": ["stickers", "icon", "banner"],
+  "properties": {
+    "stickers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "order", "copy", "status"],
+        "properties": {
+          "id": {"type": "string"},
+          "order": {"type": "integer", "minimum": 1},
+          "copy": {"type": "string"},
+          "source": {"type": ["string", "null"]},
+          "final": {"type": ["string", "null"]},
+          "status": {"enum": ["candidate", "approved", "failed", "repaired", "final"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "icon": {"type": ["object", "null"]},
+    "banner": {"type": ["object", "null"]},
+    "preview": {"type": ["object", "null"]}
+  },
+  "additionalProperties": true
+}

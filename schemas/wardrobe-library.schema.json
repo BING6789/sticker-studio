@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sticker Wardrobe Library",
+  "type": "object",
+  "required": [
+    "character_id",
+    "base_wardrobe_id",
+    "wardrobes"
+  ],
+  "properties": {
+    "character_id": {
+      "type": "string"
+    },
+    "base_wardrobe_id": {
+      "type": "string"
+    },
+    "wardrobes": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "wardrobe_id",
+          "name",
+          "scene_tags",
+          "allowed_variations",
+          "forbidden_variations"
+        ],
+        "properties": {
+          "wardrobe_id": {
+            "type": "string",
+            "pattern": "^W[0-9]{2}$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "scene_tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "primary_colors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "top": {
+            "type": "string"
+          },
+          "bottom": {
+            "type": "string"
+          },
+          "outfit_state": {
+            "type": "string"
+          },
+          "identity_anchors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "allowed_variations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "forbidden_variations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

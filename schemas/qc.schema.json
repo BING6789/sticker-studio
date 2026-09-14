@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StickerQC",
+  "type": "object",
+  "required": ["overall", "checks", "failures", "warnings"],
+  "properties": {
+    "overall": {"enum": ["PASS", "FAIL", "WARNING", "NOT_RUN"]},
+    "checks": {"type": "array", "items": {"type": "object"}},
+    "failures": {"type": "array", "items": {"type": "object"}},
+    "warnings": {"type": "array", "items": {"type": "object"}},
+    "platform_delivery": {"type": ["object", "null"]}
+  },
+  "additionalProperties": true
+}

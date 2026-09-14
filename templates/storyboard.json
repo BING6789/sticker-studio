@@ -1,0 +1,16 @@
+{
+  "copy": "",
+  "emotion": "",
+  "face": "",
+  "body": "",
+  "prop": "",
+  "visual_contrast": "",
+  "composition": "",
+  "text": "",
+  "output": {
+    "width": 240,
+    "height": 240,
+    "format": "PNG",
+    "background": "transparent"
+  }
+}

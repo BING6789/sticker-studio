@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Series Icon Registry",
+  "type": "object",
+  "required": [
+    "ip_id",
+    "entries"
+  ],
+  "properties": {
+    "ip_id": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "series_id",
+          "status",
+          "expression",
+          "head_angle",
+          "gaze_direction"
+        ],
+        "properties": {
+          "series_id": {
+            "type": "string"
+          },
+          "pack_name": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "used",
+              "reserved",
+              "candidate"
+            ]
+          },
+          "expression": {
+            "type": "string"
+          },
+          "head_angle": {
+            "type": "string"
+          },
+          "gaze_direction": {
+            "type": "string"
+          },
+          "brow_mouth_state": {
+            "type": "string"
+          },
+          "clothing_state": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

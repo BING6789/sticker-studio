@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "personality": [],
+  "locked": {},
+  "variable": ["expression", "pose", "gesture", "direction", "prop", "emotion_intensity", "composition"],
+  "forbidden": [],
+  "master_references": []
+}

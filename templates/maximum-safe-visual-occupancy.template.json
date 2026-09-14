@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "assets": [
+    "main_sticker",
+    "cover",
+    "icon"
+  ],
+  "comparison_required": true,
+  "visual_center_required": true,
+  "pixel_safe": true,
+  "fixed_margin_forbidden": true,
+  "notes": "在不裁切主体、文字、T40描边和必要动作的前提下，尽可能铺满安全区域。"
+}

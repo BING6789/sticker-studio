@@ -1,0 +1,17 @@
+name: split
+mode: SPLIT
+pixel_safe: true
+steps:
+  - inspect_sheet
+  - determine_grid_or_explicit_boxes
+  - extract_without_redraw
+  - trim_content_safely
+  - resize_and_pad_each_asset
+  - qc_each_asset
+  - package_only_after_qc
+forbidden:
+  - regenerate_sheet
+  - regenerate_individual_stickers
+notes:
+  - Uniform grid splitting is allowed only when the sheet is truly uniform.
+  - If content crosses grid boundaries, use explicit boxes or manual review.

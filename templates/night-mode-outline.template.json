@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "subject_outline": {
+    "mode": "adaptive_contrast",
+    "direction": "outward_only",
+    "anti_alias_required": true,
+    "fixed_width_forbidden": true,
+    "jagged_forbidden": true,
+    "fuzzy_halo_forbidden": true
+  },
+  "text_outline": {
+    "mode": "adaptive_white_or_near_white",
+    "preserve_T33": true
+  },
+  "qc_backgrounds": [
+    "white",
+    "light_gray",
+    "dark_gray",
+    "near_black"
+  ],
+  "one_glance_required": true
+}

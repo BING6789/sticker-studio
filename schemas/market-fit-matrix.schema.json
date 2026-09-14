@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sticker Market Fit Matrix",
+  "type": "object",
+  "required": [
+    "concept",
+    "scores"
+  ],
+  "properties": {
+    "concept": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "scores": {
+      "type": "object",
+      "required": [
+        "F",
+        "S",
+        "P",
+        "R",
+        "V",
+        "E",
+        "M",
+        "K"
+      ],
+      "properties": {
+        "F": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "S": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "P": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "R": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "V": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "E": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "M": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "K": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "evidence_level": {
+      "enum": [
+        "official",
+        "creator_disclosure",
+        "media_case",
+        "community_observation",
+        "internal_analytics",
+        "directional_estimate"
+      ]
+    }
+  }
+}

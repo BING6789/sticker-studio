@@ -1,0 +1,10 @@
+{
+  "platform": "WeChat Stickers",
+  "copy": "待检查文案",
+  "risk_level": "R0",
+  "matched_case_id": null,
+  "risk_reason": "",
+  "suggested_alternatives": [],
+  "user_choice": "pending",
+  "production_policy": "warn_then_respect_user_choice"
+}

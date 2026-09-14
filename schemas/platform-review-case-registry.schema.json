@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Platform Review Case Registry",
+  "type": "object",
+  "required": [
+    "platform",
+    "cases"
+  ],
+  "properties": {
+    "platform": {
+      "type": "string"
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "case_id",
+          "content",
+          "result",
+          "evidence_source",
+          "risk_level",
+          "production_policy"
+        ],
+        "properties": {
+          "case_id": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "result": {
+            "enum": [
+              "rejected",
+              "approved",
+              "uncertain"
+            ]
+          },
+          "evidence_source": {
+            "enum": [
+              "official",
+              "user_verified",
+              "creator_case",
+              "heuristic"
+            ]
+          },
+          "risk_level": {
+            "enum": [
+              "R0",
+              "R1",
+              "R2",
+              "R3"
+            ]
+          },
+          "risk_type": {
+            "type": "string"
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "production_policy": {
+            "const": "warn_then_respect_user_choice"
+          }
+        }
+      }
+    }
+  }
+}

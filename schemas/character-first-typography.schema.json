@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Character-First Typography Composition",
+  "type": "object",
+  "properties": {
+    "character_first": {"const": true},
+    "allow_arc_layout": {"const": true},
+    "allow_controlled_overlap": {"const": true},
+    "allow_intra_copy_size_progression": {"const": true},
+    "allow_baseline_motion": {"const": true},
+    "allow_spacing_progression": {"const": true},
+    "avoid_detached_text_block": {"const": true},
+    "protect_face_and_core_gesture": {"const": true},
+    "preserve_t41_occupancy": {"const": true}
+  },
+  "required": ["character_first", "allow_arc_layout", "allow_controlled_overlap", "allow_intra_copy_size_progression", "avoid_detached_text_block", "protect_face_and_core_gesture", "preserve_t41_occupancy"]
+}

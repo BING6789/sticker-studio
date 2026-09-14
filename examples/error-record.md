@@ -1,0 +1,10 @@
+# Error Record Template
+
+ERROR_ID: E000
+INPUT:
+EXPECTED:
+ACTUAL:
+ROOT_CAUSE:
+NEW_RULE:
+REGRESSION_TEST:
+STATUS: open|fixed|verified

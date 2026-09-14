@@ -1,0 +1,27 @@
+{
+  "ip_id": "IP_ID",
+  "entries": [
+    {
+      "series_id": "S01",
+      "pack_name": "第一辑",
+      "status": "used",
+      "expression": "正面自信微笑",
+      "head_angle": "正面",
+      "gaze_direction": "正前方",
+      "brow_mouth_state": "自然眉 + 微笑",
+      "clothing_state": "基础状态",
+      "notes": "基础系列icon"
+    },
+    {
+      "series_id": "S02",
+      "pack_name": "第二辑",
+      "status": "candidate",
+      "expression": "单边挑眉 + 轻微侧眼",
+      "head_angle": "轻微歪头/侧15度",
+      "gaze_direction": "侧向",
+      "brow_mouth_state": "单边挑眉 + 轻微歪嘴",
+      "clothing_state": "可与S01保持同服装",
+      "notes": "需与S01小尺寸并排QC"
+    }
+  ]
+}

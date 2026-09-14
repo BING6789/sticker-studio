@@ -1,0 +1,72 @@
+platform: wechat
+version: 1.2
+main_sticker:
+  width: 240
+  height: 240
+  format: PNG
+  transparency: required
+  max_count: 24
+cover:
+  width: 240
+  height: 240
+  format: PNG
+  transparency: required
+icon:
+  width: 50
+  height: 50
+  format: PNG
+  transparency: required
+banner:
+  width: 750
+  height: 400
+  format: PNG
+  transparency: optional
+  background: light
+release:
+  required_metadata:
+    - name
+    - description
+  required_files:
+    - wechat/cover_240x240.png
+    - wechat/icon_50x50.png
+    - wechat/banner_750x400.png
+    - project/info.txt
+    - project/project.json
+    - project/assets.json
+    - project/qc.json
+
+visual_rules_v1_7:
+  main_sticker:
+    max_count: 24
+    width: 240
+    height: 240
+    format: png
+    true_alpha_required: true
+  icon:
+    width: 100
+    height: 100
+    true_alpha_required: true
+    approved_character_headshot_only: true
+  banner:
+    width: 750
+    height: 400
+    light_background: true
+    approved_sticker_count: 1
+    extra_promotional_text_forbidden: true
+  composition:
+    default: head_upper_body_dominant
+    full_body_only_when_semantically_required: true
+    alpha_occupancy_qc_required: true
+  typography:
+    expressive_typography_required: true
+    keyword_emphasis_modes: [NONE, LIGHT, STRONG]
+    keyword_emphasis_not_mandatory: true
+    white_outline_required: true
+    outline_thickness: adaptive
+    light_background_preview_required: true
+    dark_background_preview_required: true
+    small_chat_preview_required: true
+  wardrobe:
+    contextual_variation_allowed: true
+    decision_order: [expression, action, prop, outfit]
+    identity_lock_required: true

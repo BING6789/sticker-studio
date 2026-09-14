@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Maximum Safe Visual Occupancy",
+  "type": "object",
+  "required": [
+    "enabled",
+    "assets",
+    "comparison_required",
+    "pixel_safe"
+  ],
+  "properties": {
+    "enabled": {
+      "const": true
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "main_sticker",
+          "cover",
+          "icon"
+        ]
+      },
+      "minItems": 3,
+      "uniqueItems": true
+    },
+    "comparison_required": {
+      "const": true
+    },
+    "visual_center_required": {
+      "const": true
+    },
+    "pixel_safe": {
+      "const": true
+    },
+    "fixed_margin_forbidden": {
+      "const": true
+    }
+  }
+}

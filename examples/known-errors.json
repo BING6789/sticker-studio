@@ -1,0 +1,7 @@
+[
+  {"id":"E001","name":"Split routed to generation","root_cause":"intent misrouting","rule":"SPLIT always enters Pixel Safe","test":"T01","status":"covered"},
+  {"id":"E002","name":"Default ratio drift","root_cause":"platform default ignored","rule":"WeChat main sticker defaults to 500x500 transparent PNG","test":"T02/T07","status":"covered"},
+  {"id":"E003","name":"Remove text caused redraw","root_cause":"minimum-change rule ignored","rule":"PRESERVE_ALL for other-unchanged requests","test":"T03/T20","status":"covered"},
+  {"id":"E004","name":"Fake transparency","root_cause":"visual checkerboard mistaken for alpha","rule":"verify actual alpha channel/pixels","test":"ALPHA_VERIFY","status":"covered"},
+  {"id":"E005","name":"Grid split artifacts","root_cause":"uniform slicing on non-uniform content","rule":"use explicit boxes/manual review if content crosses boundaries","test":"SPLIT_QC + workflow guard","status":"covered"}
+]

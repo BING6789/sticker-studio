@@ -1,0 +1,16 @@
+{
+  "platform": "wechat",
+  "name": "",
+  "description": "",
+  "sticker_count": 24,
+  "max_sticker_count": 24,
+  "required_assets": [
+    "stickers_240x240",
+    "cover_240x240",
+    "icon_50x50",
+    "banner_750x400",
+    "name",
+    "description",
+    "zip"
+  ]
+}

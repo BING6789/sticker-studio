@@ -1,0 +1,16 @@
+name: process
+mode: PROCESS
+pixel_safe: true
+steps:
+  - inspect_source
+  - resolve_requested_transform
+  - execute_deterministic_tool
+  - verify_output_dimensions_and_format
+  - verify_alpha_if_required
+  - record_asset_update
+  - report_result
+forbidden:
+  - regenerate_artwork
+  - restyle_character
+  - invent_props
+  - rewrite_copy

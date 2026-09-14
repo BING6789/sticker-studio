@@ -1,0 +1,8 @@
+usage: sticker-skill [-h]
+                     {inspect,resize,verify-alpha,split,cover,icon,banner,qc-image,qc-project,package} ...
+
+positional arguments:
+  {inspect,resize,verify-alpha,split,cover,icon,banner,qc-image,qc-project,package}
+
+options:
+  -h, --help            show this help message and exit

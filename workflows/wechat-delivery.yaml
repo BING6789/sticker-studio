@@ -1,0 +1,14 @@
+name: wechat-delivery
+platform: wechat
+steps:
+  - verify_master_character_approval
+  - verify_user_approved_sticker_count_1_to_24
+  - ensure_all_main_stickers_240x240_transparent_png
+  - ensure_cover_240x240_transparent_png
+  - ensure_icon_50x50_transparent_png
+  - ensure_banner_750x400_png_light_background
+  - ensure_name
+  - ensure_description
+  - run_platform_qc
+  - block_package_unless_qc_pass
+  - package_zip

@@ -1,0 +1,133 @@
+[
+  {
+    "id": "T01",
+    "input": "拆分为12张240×240透明PNG",
+    "expected_mode": "SPLIT",
+    "generation_allowed": false,
+    "pixel_safe": true
+  },
+  {
+    "id": "T02",
+    "input": "改成240×240透明PNG",
+    "expected_mode": "PROCESS",
+    "generation_allowed": false,
+    "pixel_safe": true
+  },
+  {
+    "id": "T03",
+    "input": "其他不变，只去掉文字",
+    "expected_mode": "EDIT",
+    "generation_allowed": true,
+    "preserve_all": true
+  },
+  {
+    "id": "T04",
+    "input": "字体小一点，其他不变",
+    "expected_mode": "EDIT",
+    "generation_allowed": true,
+    "preserve_all": true
+  },
+  {
+    "id": "T05",
+    "input": "把杯子文字改成咖啡，其他不变",
+    "expected_mode": "EDIT",
+    "generation_allowed": true,
+    "preserve_all": true
+  },
+  {
+    "id": "T06",
+    "input": "正式生成一个微信表情",
+    "expected_mode": "GENERATE",
+    "generation_allowed": true
+  },
+  {
+    "id": "T07",
+    "input": "正式微信单张表情，240*240透明PNG",
+    "expected_mode": "PROCESS",
+    "generation_allowed": false,
+    "pixel_safe": true
+  },
+  {
+    "id": "T08",
+    "input": "做上传图标，50×50透明格式",
+    "expected_mode": "PROCESS",
+    "generation_allowed": false,
+    "pixel_safe": true
+  },
+  {
+    "id": "T09",
+    "input": "做横幅，750×400 PNG 浅色背景",
+    "expected_mode": "PROCESS",
+    "generation_allowed": false,
+    "pixel_safe": true
+  },
+  {
+    "id": "T10",
+    "input": "用第5张做横幅",
+    "expected_mode": "PLATFORM_ASSET",
+    "generation_allowed": false
+  },
+  {
+    "id": "T11",
+    "input": "第17张有问题，只修这一张",
+    "expected_mode": "EDIT",
+    "generation_allowed": true
+  },
+  {
+    "id": "T12",
+    "input": "24张完成后打包ZIP",
+    "expected_mode": "PACKAGE",
+    "generation_allowed": false,
+    "pixel_safe": true
+  },
+  {
+    "id": "T13",
+    "input": "检查透明PNG是不是真透明",
+    "expected_mode": "QC",
+    "generation_allowed": false
+  },
+  {
+    "id": "T14",
+    "input": "从12宫格提取单张",
+    "expected_mode": "SPLIT",
+    "generation_allowed": false,
+    "pixel_safe": true
+  },
+  {
+    "id": "T15",
+    "input": "检查拆分后有没有邻格残片",
+    "expected_mode": "QC",
+    "generation_allowed": false
+  },
+  {
+    "id": "T16",
+    "input": "文案已经锁定，不要改字",
+    "expected_mode": "COPY",
+    "generation_allowed": false
+  },
+  {
+    "id": "T17",
+    "input": "角色母版锁定，保持角色一致",
+    "expected_mode": "CREATE",
+    "generation_allowed": false
+  },
+  {
+    "id": "T18",
+    "input": "先讨论一下第25张怎么做，不要生成",
+    "expected_mode": "CREATE",
+    "generation_allowed": false
+  },
+  {
+    "id": "T19",
+    "input": "正式生成第8张",
+    "expected_mode": "GENERATE",
+    "generation_allowed": true
+  },
+  {
+    "id": "T20",
+    "input": "去掉文字，不要其他变化",
+    "expected_mode": "EDIT",
+    "generation_allowed": true,
+    "preserve_all": true
+  }
+]

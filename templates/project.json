@@ -1,0 +1,19 @@
+{
+  "project_id": "",
+  "name": "",
+  "platform": "wechat",
+  "version": "1.2",
+  "status": "idea",
+  "sticker_count": 24,
+  "master_character": {
+    "reference": null,
+    "approved": false,
+    "approved_at": null
+  },
+  "output": {
+    "width": 240,
+    "height": 240,
+    "format": "PNG",
+    "background": "transparent"
+  }
+}

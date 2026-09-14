@@ -1,0 +1,23 @@
+name: create
+mode: CREATE
+steps:
+  - define_project
+  - define_character_concept
+  - generate_master_character
+  - request_master_character_approval
+  - gate_master_character_approved
+  - lock_master_character_reference
+  - generate_and_score_copy
+  - approve_copy
+  - create_storyboards
+  - generate_small_test_batch
+  - approve_expression_and_style
+  - lock_style
+  - batch_generate
+  - qc
+  - repair_failed_only
+  - platform_delivery
+gates:
+  master_character:
+    severity: P0
+    rule: "No batch sticker generation before explicit user approval of the master character image."

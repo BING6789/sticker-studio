@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Adaptive Night Mode Outline Profile",
+  "type": "object",
+  "required": [
+    "enabled",
+    "subject_outline",
+    "text_outline",
+    "qc_backgrounds",
+    "one_glance_required"
+  ],
+  "properties": {
+    "enabled": {
+      "const": true
+    },
+    "subject_outline": {
+      "type": "object",
+      "required": [
+        "mode",
+        "direction",
+        "anti_alias_required",
+        "fixed_width_forbidden"
+      ],
+      "properties": {
+        "mode": {
+          "const": "adaptive_contrast"
+        },
+        "direction": {
+          "const": "outward_only"
+        },
+        "anti_alias_required": {
+          "const": true
+        },
+        "fixed_width_forbidden": {
+          "const": true
+        },
+        "jagged_forbidden": {
+          "const": true
+        },
+        "fuzzy_halo_forbidden": {
+          "const": true
+        }
+      }
+    },
+    "text_outline": {
+      "type": "object"
+    },
+    "qc_backgrounds": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string"
+      }
+    },
+    "one_glance_required": {
+      "const": true
+    }
+  }
+}

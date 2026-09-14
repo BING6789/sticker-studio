@@ -1,0 +1,32 @@
+{
+  "character_id": "CHARACTER_ID",
+  "base_wardrobe_id": "W01",
+  "wardrobes": [
+    {
+      "wardrobe_id": "W01",
+      "name": "基础/标志性服装",
+      "scene_tags": [
+        "默认",
+        "通用"
+      ],
+      "primary_colors": [
+        "按MASTER_REFERENCE填写"
+      ],
+      "top": "基础上装",
+      "bottom": "基础下装",
+      "outfit_state": "默认状态",
+      "identity_anchors": [
+        "角色标志性服装锚点"
+      ],
+      "allowed_variations": [
+        "自然形变",
+        "轻微褶皱"
+      ],
+      "forbidden_variations": [
+        "随机换色",
+        "随机饰品",
+        "破坏角色识别"
+      ]
+    }
+  ]
+}

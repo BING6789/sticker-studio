@@ -1,0 +1,33 @@
+name: sticker-studio
+version: 2.4.0
+entrypoint: SKILL.md
+description: End-to-end static sticker production skill with deterministic image processing, QC, regression tests, and platform delivery profiles.
+supported_platforms:
+  - wechat
+default_platform: wechat
+capabilities:
+  - create
+  - copy
+  - storyboard
+  - generate
+  - edit
+  - process
+  - split
+  - qc
+  - platform_asset
+  - package
+required_runtime:
+  python: ">=3.10"
+python_dependencies:
+  - Pillow
+  - jsonschema
+  - PyYAML
+project_schema: schemas/project.schema.json
+asset_schema: schemas/assets.schema.json
+qc_schema: schemas/qc.schema.json
+
+package_integrity:
+  complete_base: v1.2
+  fallback_to_older_missing_rules: forbidden
+  required_inventory: FILE_INVENTORY.json
+  validation_command: python3 tools/validate_package.py

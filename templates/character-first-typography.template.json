@@ -1,0 +1,13 @@
+{
+  "character_first": true,
+  "copy_length_strategy": "adaptive",
+  "layout_candidates": ["near-character", "staggered", "arc", "semi-ring", "directional", "controlled-overlap"],
+  "typography_performance": {
+    "size_progression": "as-needed",
+    "spacing_progression": "as-needed",
+    "baseline_motion": "as-needed",
+    "keyword_emphasis": "as-needed"
+  },
+  "protect": ["eyes", "mouth", "identity anchors", "core gesture", "meaning-critical prop"],
+  "preserve_t41_maximum_safe_occupancy": true
+}

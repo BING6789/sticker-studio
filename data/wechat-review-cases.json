@@ -1,0 +1,35 @@
+{
+  "platform": "WeChat Stickers",
+  "cases": [
+    {
+      "case_id": "WX-REJECT-001",
+      "content": "OJBK",
+      "result": "rejected",
+      "evidence_source": "user_verified",
+      "risk_level": "R3",
+      "risk_type": "网络缩写/粗俗语源或规避式表达审核风险",
+      "alternatives": [
+        "可以",
+        "妥了",
+        "稳了",
+        "没问题"
+      ],
+      "production_policy": "warn_then_respect_user_choice"
+    },
+    {
+      "case_id": "WX-REJECT-002",
+      "content": "真牛逼",
+      "result": "rejected",
+      "evidence_source": "user_verified",
+      "risk_level": "R3",
+      "risk_type": "粗俗/不文明用语审核风险",
+      "alternatives": [
+        "真厉害",
+        "太强了",
+        "绝了",
+        "可以啊"
+      ],
+      "production_policy": "warn_then_respect_user_choice"
+    }
+  ]
+}
